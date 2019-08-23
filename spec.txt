@@ -1,0 +1,16 @@
+PORT=3999
+
+GET http://localhost:3999/api/github-stats/
+
+Response:
+{
+  "top10Languages": [
+    {
+      "language": "C++",
+      "repoCount": 20000000
+    }
+  ]
+}
+
+KOA 3.X
+Node 10.X
