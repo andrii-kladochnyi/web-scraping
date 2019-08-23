@@ -7,7 +7,7 @@ const app = new Koa();
 const router = new Router();
 
 router.get('/api/github-stats', async ctx => {
-    let ghResponse = await rq("https://api.github.com/repos/facebook/react");
+    let ghResponse = await rq("https://api.github.com/repositories?since=204019699");
     ctx.body = ghResponse;
 });
 

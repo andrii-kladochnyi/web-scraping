@@ -1,0 +1,12 @@
+SELECT language.name, COUNT(language.name)
+AS count FROM [bigquery-public-data:github_repos.languages]
+group by language.name order by count DESC
+
+
+SELECT language.name, COUNT(language.name)
+AS count FROM [bigquery-public-data:github_repos.languages]
+WHERE repo_name LIKE 'AndriyKladochny/%'
+group by language.name order by count DESC
+
+Table bigquery-public-data:github_repos.languages
+Last modified	Aug 23, 2019, 3:55:32 PM

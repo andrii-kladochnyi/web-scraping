@@ -1,0 +1,382 @@
+{"language_name":"JavaScript","count":"1109294"}
+{"language_name":"CSS","count":"822818"}
+{"language_name":"HTML","count":"786852"}
+{"language_name":"Shell","count":"641552"}
+{"language_name":"Python","count":"551321"}
+{"language_name":"Ruby","count":"377938"}
+{"language_name":"Java","count":"371430"}
+{"language_name":"PHP","count":"343356"}
+{"language_name":"C","count":"294378"}
+{"language_name":"C++","count":"280550"}
+{"language_name":"Makefile","count":"250684"}
+{"language_name":"Objective-C","count":"170134"}
+{"language_name":"C#","count":"133902"}
+{"language_name":"Perl","count":"102891"}
+{"language_name":"Batchfile","count":"98141"}
+{"language_name":"Go","count":"91133"}
+{"language_name":"ApacheConf","count":"70167"}
+{"language_name":"CoffeeScript","count":"69625"}
+{"language_name":"CMake","count":"55869"}
+{"language_name":"Assembly","count":"48259"}
+{"language_name":"TypeScript","count":"45251"}
+{"language_name":"Swift","count":"42371"}
+{"language_name":"Scala","count":"34737"}
+{"language_name":"Lua","count":"34281"}
+{"language_name":"ASP","count":"34006"}
+{"language_name":"PowerShell","count":"32907"}
+{"language_name":"XSLT","count":"32655"}
+{"language_name":"TeX","count":"31716"}
+{"language_name":"Haskell","count":"30317"}
+{"language_name":"R","count":"29583"}
+{"language_name":"Groovy","count":"27452"}
+{"language_name":"Groff","count":"26383"}
+{"language_name":"Clojure","count":"26054"}
+{"language_name":"Awk","count":"21009"}
+{"language_name":"Arduino","count":"20819"}
+{"language_name":"Dockerfile","count":"20305"}
+{"language_name":"VimL","count":"19836"}
+{"language_name":"Matlab","count":"18572"}
+{"language_name":"Objective-C++","count":"18012"}
+{"language_name":"QMake","count":"17751"}
+{"language_name":"Smarty","count":"17382"}
+{"language_name":"Emacs Lisp","count":"16855"}
+{"language_name":"Jupyter Notebook","count":"16495"}
+{"language_name":"M4","count":"15603"}
+{"language_name":"Rust","count":"15411"}
+{"language_name":"Erlang","count":"15141"}
+{"language_name":"Puppet","count":"15122"}
+{"language_name":"Yacc","count":"13846"}
+{"language_name":"GLSL","count":"13790"}
+{"language_name":"Scilab","count":"13370"}
+{"language_name":"Lex","count":"12611"}
+{"language_name":"Protocol Buffer","count":"11975"}
+{"language_name":"Visual Basic","count":"11514"}
+{"language_name":"Prolog","count":"11407"}
+{"language_name":"Roff","count":"11181"}
+{"language_name":"Vim script","count":"10815"}
+{"language_name":"Pascal","count":"10268"}
+{"language_name":"UnrealScript","count":"9761"}
+{"language_name":"PLpgSQL","count":"9569"}
+{"language_name":"SourcePawn","count":"9266"}
+{"language_name":"ActionScript","count":"8856"}
+{"language_name":"Nginx","count":"8767"}
+{"language_name":"Vue","count":"8457"}
+{"language_name":"NSIS","count":"8188"}
+{"language_name":"Tcl","count":"8138"}
+{"language_name":"Cucumber","count":"7746"}
+{"language_name":"D","count":"7236"}
+{"language_name":"Scheme","count":"7221"}
+{"language_name":"PLSQL","count":"7136"}
+{"language_name":"Kotlin","count":"6939"}
+{"language_name":"Elixir","count":"6859"}
+{"language_name":"Processing","count":"6818"}
+{"language_name":"Handlebars","count":"6648"}
+{"language_name":"Julia","count":"5975"}
+{"language_name":"F#","count":"5922"}
+{"language_name":"Common Lisp","count":"5722"}
+{"language_name":"Smalltalk","count":"5658"}
+{"language_name":"OCaml","count":"5651"}
+{"language_name":"SQLPL","count":"5590"}
+{"language_name":"Perl6","count":"5546"}
+{"language_name":"Dart","count":"5487"}
+{"language_name":"IDL","count":"5433"}
+{"language_name":"QML","count":"5290"}
+{"language_name":"M","count":"4982"}
+{"language_name":"Logos","count":"4616"}
+{"language_name":"Gherkin","count":"4478"}
+{"language_name":"Mako","count":"4344"}
+{"language_name":"Cuda","count":"4340"}
+{"language_name":"PostScript","count":"4171"}
+{"language_name":"AppleScript","count":"4124"}
+{"language_name":"GAP","count":"4115"}
+{"language_name":"FORTRAN","count":"3895"}
+{"language_name":"DIGITAL Command Language","count":"3890"}
+{"language_name":"Racket","count":"3819"}
+{"language_name":"SuperCollider","count":"3784"}
+{"language_name":"Bison","count":"3733"}
+{"language_name":"Inno Setup","count":"3674"}
+{"language_name":"FreeMarker","count":"3513"}
+{"language_name":"Thrift","count":"3508"}
+{"language_name":"Haxe","count":"3345"}
+{"language_name":"TSQL","count":"3297"}
+{"language_name":"Gnuplot","count":"3183"}
+{"language_name":"DOT","count":"3036"}
+{"language_name":"Verilog","count":"2951"}
+{"language_name":"Elm","count":"2864"}
+{"language_name":"ANTLR","count":"2813"}
+{"language_name":"Hack","count":"2784"}
+{"language_name":"XML","count":"2749"}
+{"language_name":"HCL","count":"2725"}
+{"language_name":"Mathematica","count":"2692"}
+{"language_name":"Fortran","count":"2656"}
+{"language_name":"OpenEdge ABL","count":"2611"}
+{"language_name":"GDB","count":"2595"}
+{"language_name":"Perl 6","count":"2451"}
+{"language_name":"Standard ML","count":"2409"}
+{"language_name":"Nix","count":"2325"}
+{"language_name":"LiveScript","count":"2309"}
+{"language_name":"Ada","count":"2181"}
+{"language_name":"Eagle","count":"2128"}
+{"language_name":"ColdFusion","count":"2098"}
+{"language_name":"VHDL","count":"2094"}
+{"language_name":"DTrace","count":"2073"}
+{"language_name":"Vala","count":"2035"}
+{"language_name":"XS","count":"1969"}
+{"language_name":"Forth","count":"1914"}
+{"language_name":"MATLAB","count":"1896"}
+{"language_name":"OpenSCAD","count":"1789"}
+{"language_name":"SaltStack","count":"1708"}
+{"language_name":"Rebol","count":"1693"}
+{"language_name":"HLSL","count":"1602"}
+{"language_name":"AutoHotkey","count":"1454"}
+{"language_name":"SAS","count":"1366"}
+{"language_name":"Module Management System","count":"1340"}
+{"language_name":"LLVM","count":"1339"}
+{"language_name":"Crystal","count":"1203"}
+{"language_name":"XQuery","count":"1184"}
+{"language_name":"ShaderLab","count":"1176"}
+{"language_name":"KiCad","count":"1139"}
+{"language_name":"Max","count":"1041"}
+{"language_name":"BitBake","count":"1037"}
+{"language_name":"Coq","count":"1030"}
+{"language_name":"Stata","count":"1029"}
+{"language_name":"SystemVerilog","count":"1026"}
+{"language_name":"CLIPS","count":"1008"}
+{"language_name":"Liquid","count":"982"}
+{"language_name":"Pure Data","count":"942"}
+{"language_name":"eC","count":"939"}
+{"language_name":"Ragel in Ruby Host","count":"925"}
+{"language_name":"GCC Machine Description","count":"902"}
+{"language_name":"FLUX","count":"877"}
+{"language_name":"Meson","count":"870"}
+{"language_name":"sed","count":"870"}
+{"language_name":"Brainfuck","count":"847"}
+{"language_name":"Xtend","count":"840"}
+{"language_name":"AMPL","count":"831"}
+{"language_name":"PureScript","count":"827"}
+{"language_name":"API Blueprint","count":"815"}
+{"language_name":"NewLisp","count":"814"}
+{"language_name":"AspectJ","count":"797"}
+{"language_name":"Apex","count":"776"}
+{"language_name":"Eiffel","count":"717"}
+{"language_name":"AGS Script","count":"672"}
+{"language_name":"Gettext Catalog","count":"665"}
+{"language_name":"GDScript","count":"664"}
+{"language_name":"Mercury","count":"663"}
+{"language_name":"Cap'n Proto","count":"663"}
+{"language_name":"COBOL","count":"662"}
+{"language_name":"Web Ontology Language","count":"662"}
+{"language_name":"AutoIt","count":"657"}
+{"language_name":"Rich Text Format","count":"655"}
+{"language_name":"Mask","count":"649"}
+{"language_name":"SQL","count":"648"}
+{"language_name":"Nimrod","count":"631"}
+{"language_name":"PureBasic","count":"630"}
+{"language_name":"Io","count":"627"}
+{"language_name":"SQF","count":"612"}
+{"language_name":"PigLatin","count":"602"}
+{"language_name":"Diff","count":"576"}
+{"language_name":"Modelica","count":"555"}
+{"language_name":"Gosu","count":"548"}
+{"language_name":"PAWN","count":"544"}
+{"language_name":"RobotFramework","count":"494"}
+{"language_name":"BlitzBasic","count":"494"}
+{"language_name":"RAML","count":"479"}
+{"language_name":"Arc","count":"473"}
+{"language_name":"nesC","count":"469"}
+{"language_name":"EmberScript","count":"457"}
+{"language_name":"Lasso","count":"455"}
+{"language_name":"XC","count":"452"}
+{"language_name":"ABAP","count":"448"}
+{"language_name":"POV-Ray SDL","count":"445"}
+{"language_name":"Nim","count":"445"}
+{"language_name":"JSONiq","count":"438"}
+{"language_name":"Game Maker Language","count":"437"}
+{"language_name":"Squirrel","count":"436"}
+{"language_name":"Slash","count":"428"}
+{"language_name":"VCL","count":"427"}
+{"language_name":"DM","count":"404"}
+{"language_name":"LSL","count":"398"}
+{"language_name":"RenderScript","count":"398"}
+{"language_name":"Nu","count":"373"}
+{"language_name":"MoonScript","count":"371"}
+{"language_name":"Limbo","count":"367"}
+{"language_name":"Volt","count":"361"}
+{"language_name":"LabVIEW","count":"355"}
+{"language_name":"Objective-J","count":"349"}
+{"language_name":"xBase","count":"348"}
+{"language_name":"CartoCSS","count":"344"}
+{"language_name":"AngelScript","count":"333"}
+{"language_name":"MAXScript","count":"331"}
+{"language_name":"E","count":"311"}
+{"language_name":"Idris","count":"302"}
+{"language_name":"LilyPond","count":"297"}
+{"language_name":"Nemerle","count":"293"}
+{"language_name":"Augeas","count":"291"}
+{"language_name":"Cirru","count":"288"}
+{"language_name":"Ragel","count":"285"}
+{"language_name":"Clarion","count":"278"}
+{"language_name":"Clean","count":"267"}
+{"language_name":"1C Enterprise","count":"266"}
+{"language_name":"Lean","count":"260"}
+{"language_name":"Delphi","count":"253"}
+{"language_name":"Boo","count":"244"}
+{"language_name":"YASnippet","count":"244"}
+{"language_name":"Metal","count":"229"}
+{"language_name":"Pawn","count":"221"}
+{"language_name":"XProc","count":"221"}
+{"language_name":"Smali","count":"208"}
+{"language_name":"Agda","count":"207"}
+{"language_name":"Jasmin","count":"206"}
+{"language_name":"Terra","count":"194"}
+{"language_name":"Hy","count":"177"}
+{"language_name":"SRecode Template","count":"173"}
+{"language_name":"Ceylon","count":"170"}
+{"language_name":"RPC","count":"168"}
+{"language_name":"Turing","count":"165"}
+{"language_name":"Frege","count":"164"}
+{"language_name":"Bro","count":"155"}
+{"language_name":"NetLogo","count":"155"}
+{"language_name":"Stan","count":"155"}
+{"language_name":"Pan","count":"153"}
+{"language_name":"J","count":"151"}
+{"language_name":"Isabelle","count":"144"}
+{"language_name":"Zephir","count":"140"}
+{"language_name":"q","count":"139"}
+{"language_name":"WebAssembly","count":"138"}
+{"language_name":"SMT","count":"137"}
+{"language_name":"Propeller Spin","count":"135"}
+{"language_name":"ooc","count":"129"}
+{"language_name":"Click","count":"127"}
+{"language_name":"Component Pascal","count":"122"}
+{"language_name":"WebIDL","count":"122"}
+{"language_name":"Parrot","count":"119"}
+{"language_name":"Genshi","count":"118"}
+{"language_name":"Monkey","count":"117"}
+{"language_name":"Modula-2","count":"115"}
+{"language_name":"Factor","count":"115"}
+{"language_name":"Dylan","count":"114"}
+{"language_name":"Fancy","count":"113"}
+{"language_name":"Rascal","count":"113"}
+{"language_name":"Jsonnet","count":"113"}
+{"language_name":"Redcode","count":"111"}
+{"language_name":"LOLCODE","count":"108"}
+{"language_name":"Pike","count":"105"}
+{"language_name":"PicoLisp","count":"97"}
+{"language_name":"ChucK","count":"97"}
+{"language_name":"Brightscript","count":"97"}
+{"language_name":"HiveQL","count":"95"}
+{"language_name":"APL","count":"94"}
+{"language_name":"Red","count":"91"}
+{"language_name":"Alloy","count":"90"}
+{"language_name":"Harbour","count":"88"}
+{"language_name":"IGOR Pro","count":"81"}
+{"language_name":"Csound Document","count":"81"}
+{"language_name":"Papyrus","count":"78"}
+{"language_name":"Oz","count":"76"}
+{"language_name":"Pony","count":"76"}
+{"language_name":"UrWeb","count":"73"}
+{"language_name":"mupad","count":"71"}
+{"language_name":"TLA","count":"71"}
+{"language_name":"Kit","count":"69"}
+{"language_name":"Xojo","count":"68"}
+{"language_name":"Cycript","count":"67"}
+{"language_name":"NCL","count":"62"}
+{"language_name":"Csound","count":"61"}
+{"language_name":"Common Workflow Language","count":"61"}
+{"language_name":"Inform 7","count":"60"}
+{"language_name":"HyPhy","count":"60"}
+{"language_name":"Myghty","count":"60"}
+{"language_name":"REXX","count":"60"}
+{"language_name":"Opa","count":"59"}
+{"language_name":"Csound Score","count":"59"}
+{"language_name":"Graphviz (DOT)","count":"59"}
+{"language_name":"Cool","count":"54"}
+{"language_name":"Chapel","count":"54"}
+{"language_name":"GAMS","count":"53"}
+{"language_name":"BlitzMax","count":"53"}
+{"language_name":"Logtalk","count":"52"}
+{"language_name":"KiCad Layout","count":"52"}
+{"language_name":"Nextflow","count":"52"}
+{"language_name":"Ren'Py","count":"51"}
+{"language_name":"Bluespec","count":"50"}
+{"language_name":"G-code","count":"47"}
+{"language_name":"LookML","count":"46"}
+{"language_name":"ATS","count":"45"}
+{"language_name":"Mirah","count":"44"}
+{"language_name":"CWeb","count":"43"}
+{"language_name":"Ioke","count":"42"}
+{"language_name":"Fantom","count":"39"}
+{"language_name":"JFlex","count":"39"}
+{"language_name":"Zimpl","count":"37"}
+{"language_name":"Uno","count":"36"}
+{"language_name":"MQL4","count":"36"}
+{"language_name":"XPages","count":"36"}
+{"language_name":"Oxygene","count":"35"}
+{"language_name":"P4","count":"35"}
+{"language_name":"Grammatical Framework","count":"35"}
+{"language_name":"MQL5","count":"35"}
+{"language_name":"YARA","count":"32"}
+{"language_name":"Solidity","count":"31"}
+{"language_name":"Pep8","count":"31"}
+{"language_name":"KRL","count":"30"}
+{"language_name":"Nearley","count":"30"}
+{"language_name":"DCPU-16 ASM","count":"30"}
+{"language_name":"Golo","count":"29"}
+{"language_name":"Ecl","count":"27"}
+{"language_name":"Dogescript","count":"26"}
+{"language_name":"Nit","count":"26"}
+{"language_name":"NetLinx","count":"26"}
+{"language_name":"Self","count":"26"}
+{"language_name":"F*","count":"25"}
+{"language_name":"Ballerina","count":"24"}
+{"language_name":"wdl","count":"23"}
+{"language_name":"wisp","count":"23"}
+{"language_name":"TXL","count":"21"}
+{"language_name":"Moocode","count":"21"}
+{"language_name":"Ox","count":"20"}
+{"language_name":"Modula-3","count":"19"}
+{"language_name":"X10","count":"19"}
+{"language_name":"PowerBuilder","count":"17"}
+{"language_name":"REALbasic","count":"17"}
+{"language_name":"ShellSession","count":"17"}
+{"language_name":"ECL","count":"15"}
+{"language_name":"Filebench WML","count":"15"}
+{"language_name":"Grace","count":"15"}
+{"language_name":"Slice","count":"15"}
+{"language_name":"Genie","count":"14"}
+{"language_name":"Tea","count":"14"}
+{"language_name":"Shen","count":"14"}
+{"language_name":"Jolie","count":"14"}
+{"language_name":"Asymptote","count":"13"}
+{"language_name":"LFE","count":"13"}
+{"language_name":"ObjectScript","count":"12"}
+{"language_name":"MTML","count":"12"}
+{"language_name":"PogoScript","count":"12"}
+{"language_name":"EQ","count":"12"}
+{"language_name":"Glyph","count":"11"}
+{"language_name":"Charity","count":"11"}
+{"language_name":"Rouge","count":"11"}
+{"language_name":"Dhall","count":"10"}
+{"language_name":"Zeek","count":"10"}
+{"language_name":"Omgrofl","count":"8"}
+{"language_name":"RUNOFF","count":"7"}
+{"language_name":"TI Program","count":"7"}
+{"language_name":"DataWeave","count":"7"}
+{"language_name":"LoomScript","count":"7"}
+{"language_name":"Opal","count":"7"}
+{"language_name":"Befunge","count":"7"}
+{"language_name":"ZenScript","count":"5"}
+{"language_name":"Markdown","count":"4"}
+{"language_name":"Zig","count":"4"}
+{"language_name":"NetLinx+ERB","count":"3"}
+{"language_name":"HolyC","count":"3"}
+{"language_name":"CSON","count":"2"}
+{"language_name":"Wollok","count":"2"}
+{"language_name":"Ring","count":"2"}
+{"language_name":"JSON","count":"1"}
+{"language_name":"ZAP","count":"1"}
+{"language_name":"YAML","count":"1"}
+{"language_name":"KiCad Schematic","count":"1"}
+{"language_name":"Org","count":"1"}
+{"language_name":null,"count":"0"}
