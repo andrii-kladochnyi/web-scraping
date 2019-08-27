@@ -2,7 +2,7 @@ const fs = require("fs");
 const formatDate = require("date-fns/format")
 
 class Logger{
-    constructor(folder = "./"){
+    constructor(folder = "./", ext = "txt"){
         const now = new Date();
 
         if(folder != "./"){
@@ -15,7 +15,7 @@ class Logger{
             }
         }
         this.firstLog = true;
-        this.fileName = folder + "/" + formatDate(now, formatDate(now,"yyyy-MM-ddTHH-mm-ss")) + ".txt";
+        this.fileName = folder + "/" + formatDate(now, formatDate(now,"yyyy-MM-ddTHH-mm-ss")) + `.${ext}`;
     }
 
     log(value) {

@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const Logger = require("./Logger");
-const logger = new Logger("logs");
-let url = "https://www.work.ua/en/jobs-it/?days=122"//"https://www.work.ua/en/jobs-it/?days=122";
+const logger = new Logger("logs", "json");
+let url = "https://www.work.ua/en/jobs-it/?days=122";//"https://www.work.ua/en/jobs-sumy-it/";
 let jobList = [];
 let pageN = 1;
 
@@ -15,7 +15,20 @@ let pageN = 1;
 
     await browser.close();
 
-    logger.log(jobList.reduce((str, job) => `${str}${job}\n`, ""));
+    //logger.log(jobList.reduce((str, job) => `${str}${job}\n`, ""));
+    logger.log(
+        JSON.stringify(
+            jobList.reduce((obj, job) => {
+                if(obj[job]){
+                    obj[job]++;
+                } else {
+                    obj[job] = 1;
+                }
+
+                return obj;
+            }, {})
+        )
+    );
 })();
 
 
@@ -25,13 +38,12 @@ async function processPage(page){
                         '#pjax-job-list h2 a', 
                         jobTitles => jobTitles.map(el => el.innerText)
                     );
-
+    
     console.log(newJobs);
 
     const nextPageUrl = await page.evaluate(() => {
         let nextBtn = 
             document.querySelector(".pagination:first-child li:last-child");
-        
         if(nextBtn.classList.contains("disabled")){
             return null;
         } else {
@@ -45,7 +57,6 @@ async function processPage(page){
     } else {
         console.log(">>> LAST PAGE!");
     }
-    
     
     return newJobs;
 }
