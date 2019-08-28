@@ -1,77 +1,15 @@
-const puppeteer = require('puppeteer');
+const grabStats = require("./grabStats");
 const Logger = require("./Logger");
 const logger = new Logger("logs", "stack-", "json");
-let url = "https://stackoverflow.com/jobs?sort=p";//"https://www.work.ua/en/jobs-it/?days=122";//"https://www.work.ua/en/jobs-sumy-it/";
-let jobList = [];
-let pageN = 1;
+let startUrl = "https://stackoverflow.com/jobs?sort=p";
 
 (async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    
-    await page.goto(url);
-    
-    jobList = await processPage(page);
+    const stats = await grabStats(
+                    startUrl, 
+                    ".listResults .post-tag", 
+                    "a.prev-next.test-pagination-next",
+                    true
+                );
 
-    await browser.close();
-
-    //logger.log(jobList.reduce((str, job) => `${str}${job}\n`, ""));
-
-    logger.log(
-        JSON.stringify(
-            Object.entries(
-                jobList.reduce((obj, job) => {
-                    const j = job.toLowerCase();
-                    if(obj[j]){
-                        obj[j]++;
-                    } else {
-                        obj[j] = 1;
-                    }
-                    return obj;
-                }, {})
-            )
-            .sort(([key1, val1], [key2, val2]) => val2-val1)
-            .reduce((obj, [key, val]) => {obj[key] = val; return obj}, {})
-        )
-    );
+    logger.log(JSON.stringify(stats));
 })();
-
-
-async function processPage(page){
-    console.log(">>> Page ", pageN++);
-    let newJobs = await page.$$eval(
-                        '.listResults .post-tag', 
-                        jobTitles => jobTitles.map(el => el.innerText)
-                    );
-    
-    console.log(newJobs);
-
-    const nextPageUrl = await page.evaluate(() => {
-        let nextBtn = 
-            document.querySelector("a.prev-next.test-pagination-next");
-        if(!nextBtn){
-            return null;
-        } else {
-            return nextBtn.href;
-        }
-    });
-
-    if(nextPageUrl){
-        await timeout();
-        await page.goto(nextPageUrl);
-        newJobs = [...newJobs, ...await processPage(page)];
-    } else {
-        console.log(">>> LAST PAGE!");
-    }
-    
-    return newJobs;
-}
-
-function timeout(){
-    return new Promise((res) => {
-        const time = Math.floor(Math.random()*8000) + 2000;
-        setTimeout(() => {
-            res();
-        }, time);
-    });
-}
