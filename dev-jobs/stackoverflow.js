@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const Logger = require("./Logger");
-const logger = new Logger("logs", "json");
-let url = "https://www.work.ua/en/jobs-it/?days=122";//"https://www.work.ua/en/jobs-it/?days=122";//"https://www.work.ua/en/jobs-sumy-it/";
+const logger = new Logger("logs", "stack-", "json");
+let url = "https://stackoverflow.com/jobs?sort=p";//"https://www.work.ua/en/jobs-it/?days=122";//"https://www.work.ua/en/jobs-sumy-it/";
 let jobList = [];
 let pageN = 1;
 
@@ -40,7 +40,7 @@ let pageN = 1;
 async function processPage(page){
     console.log(">>> Page ", pageN++);
     let newJobs = await page.$$eval(
-                        '#pjax-job-list h2 a', 
+                        '.listResults .post-tag', 
                         jobTitles => jobTitles.map(el => el.innerText)
                     );
     
@@ -48,15 +48,16 @@ async function processPage(page){
 
     const nextPageUrl = await page.evaluate(() => {
         let nextBtn = 
-            document.querySelector(".pagination:first-child li:last-child");
-        if(nextBtn.classList.contains("disabled")){
+            document.querySelector("a.prev-next.test-pagination-next");
+        if(!nextBtn){
             return null;
         } else {
-            return nextBtn.querySelector('a').href;
+            return nextBtn.href;
         }
     });
 
     if(nextPageUrl){
+        await timeout();
         await page.goto(nextPageUrl);
         newJobs = [...newJobs, ...await processPage(page)];
     } else {
@@ -64,4 +65,13 @@ async function processPage(page){
     }
     
     return newJobs;
+}
+
+function timeout(){
+    return new Promise((res) => {
+        const time = Math.floor(Math.random()*8000) + 2000;
+        setTimeout(() => {
+            res();
+        }, time);
+    });
 }
