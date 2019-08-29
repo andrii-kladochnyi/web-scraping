@@ -1,4 +1,4 @@
-const grabStats = require("./grabStats");
+const grabStats = require("./utils/grabStats");
 const Logger = require("./Logger");
 const logger = new Logger("logs", "stack-", "json");
 let startUrl = "https://stackoverflow.com/jobs?sort=p";
