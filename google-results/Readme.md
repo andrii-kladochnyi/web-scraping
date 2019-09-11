@@ -1,0 +1,1 @@
+Download `client_secret.json` from [google console](https://console.developers.google.com/apis/credentials?authuser=1&project=quickstart-1568145470147)

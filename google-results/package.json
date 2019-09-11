@@ -9,9 +9,11 @@
   "author": "Andrii Kladochnyi",
   "license": "ISC",
   "dependencies": {
+    "googleapis": "^43.0.0",
     "puppeteer": "^1.19.0"
   },
   "devDependencies": {
+    "@types/node": "^12.7.5",
     "@types/puppeteer": "^1.19.1",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.2"
