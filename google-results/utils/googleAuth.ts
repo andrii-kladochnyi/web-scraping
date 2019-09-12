@@ -29,7 +29,7 @@ let readFileAsync = function(path): Promise<Buffer>{
     authorize(JSON.parse(content.toString()), listMajors);
 }); */
 
-async function googleAuth(): Promise<OAuth2Client>{
+export async function googleAuth(): Promise<OAuth2Client>{
     let credContent = await readFileAsync('client_secret.json');
     let credentials = JSON.parse(credContent.toString());
 
@@ -81,5 +81,3 @@ async function getNewToken(oAuth2Client: OAuth2Client): Promise<Credentials> {
     });
 
 }
-
-export default googleAuth;
