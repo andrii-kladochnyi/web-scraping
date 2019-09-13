@@ -40,28 +40,19 @@ export async function grabSearchCounts(
     for(const key in searchData){
         let pageUrl = `${url}${searchData[key].query}`;
         await page.goto(pageUrl);
-        //await page.screenshot({path: `./temp/${key}.png`});
+        await page.screenshot({path: `./temp/${key}.png`});
         //await page.pdf({path: `./temp/${key}.pdf`, format: 'A4'});
-        let dataElHtml = await page.$eval(
+        let count = await page.$eval(
                         dataSelector,
                         el => {
-
-                            return el.innerHTML;
-                            /* if(typeof process == "function"){
-                                elText = process(el);
-                            } else {
-                                elText = (el as HTMLElement).innerText
-                            }
-                            return parseInt(elText.match(/\d+/g).join(''), 10); */
+                            let elCopy = <HTMLElement>el.cloneNode(true);
+                            elCopy.querySelector('nobr').remove();
+                            return parseInt(elCopy.innerHTML.match(/\d+/g).join(''), 10);
                         }
                     ); 
 
-        let dataEl = new HTMLElement();
-        dataEl.innerHTML = dataElHtml;
-        dataEl.querySelector("nobr").remove();
-        let count = parseInt(dataEl.innerText.match(/\d+/g).join(''), 10);
         searchData[key].count = count;
-        console.log(`${key} : ${count}`);
+        console.log(`${key} : ${count}`); 
     }
 
     await browser.close();

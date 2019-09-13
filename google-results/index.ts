@@ -1,12 +1,22 @@
 import { google } from "googleapis";
 import { OAuth2Client } from "googleapis-common";
-import { googleAuth, grabSearchCounts } from "./utils";
+import { Pool } from "pg";
+import * as utils from "./utils";
 import { ISearchData } from "./types";
 
 (async () => {
+    
     let auth: OAuth2Client;
+    const pool = new Pool({
+        user: 'tag_management',
+        host: 'localhost',
+        database: 'my_database',
+        password: 'plaintextpassword',
+        port: 5432
+    });
+    
     try{
-        auth = await googleAuth();
+        auth = await utils.googleAuth();
     } catch(error) {
         console.log("Google Auth error");
         console.log(error);
@@ -30,18 +40,16 @@ import { ISearchData } from "./types";
                     return data;
                 },{});
 
-        await grabSearchCounts(
-            "https://www.google.com/search?q=", 
-            "#resultStats", 
-            searchData,
-            function(el: HTMLElement): string{
-                console.log("***");
-                debugger;
-                let clone: HTMLElement = el.cloneNode(true) as HTMLElement;
-                clone.querySelector("nobr").remove();
-                return clone.innerText;
-            }
-        );
+            searchData = await utils.grabSearchCounts(
+                "https://www.google.com/search?q=", 
+                "#resultStats", 
+                searchData
+            );
+
+            console.log("***");
+            console.log(searchData);
+            
+        await utils.saveResults(pool, searchData);
     }
 
     console.log(">>> END");

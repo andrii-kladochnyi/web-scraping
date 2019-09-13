@@ -10,11 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "googleapis": "^43.0.0",
+    "pg": "^7.12.1",
     "puppeteer": "^1.19.0"
   },
   "devDependencies": {
     "@types/node": "^12.7.5",
     "@types/puppeteer": "^1.19.1",
+    "@types/pg": "^7.11.1",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.2"
   }
