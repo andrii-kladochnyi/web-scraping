@@ -10,7 +10,7 @@ export async function saveResults (pool: Pool, data: ISearchData): Promise<any> 
     }
 
     if(values.length) {
-        await pool.query(`INSERT INTO google_search (technology, count, date, tech_id)
+        await pool.query(`INSERT INTO results (technology, count, date, tech_id)
             VALUES ${values.join(",")}
         `);
     }

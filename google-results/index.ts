@@ -8,9 +8,9 @@ import { ISearchData } from "./types";
     
     let auth: OAuth2Client;
     const pool = new Pool({
-        user: 'tag_management',
+        user: 'admin',
         host: 'localhost',
-        database: 'my_database',
+        database: 'google_results',
         password: 'plaintextpassword',
         port: 5432
     });
