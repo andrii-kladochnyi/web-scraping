@@ -1,5 +1,6 @@
 import * as puppeteer from "puppeteer";
 import { ISearchData } from "./../types";
+import * as fs from "fs";
 
 export async function grabSearchCounts(
     url: string,

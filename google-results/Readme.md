@@ -10,3 +10,5 @@ CREATE TABLE "public"."results" (
     "date" timestamp,
     PRIMARY KEY ("id")
 );
+
+https://medium.com/@dupski/debug-typescript-in-vs-code-without-compiling-using-ts-node-9d1f4f9a94a

@@ -12,7 +12,7 @@ const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
 // time.
 const TOKEN_PATH = 'token.json';
 
-let readFileAsync = function(path): Promise<Buffer>{
+let readFileAsync = function(path: any): Promise<Buffer>{
     return new Promise((res, rej) => {
         fs.readFile(path, (err, content) => {
             if(err) return rej(err);
