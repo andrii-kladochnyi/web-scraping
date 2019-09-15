@@ -1,8 +1,9 @@
-import { google } from "googleapis";
 import { OAuth2Client } from "googleapis-common";
 import { Pool } from "pg";
-import * as utils from "./utils";
+import { grabSearchCounts } from "./scraping";
 import { ISearchData } from "./types";
+import { saveResults } from "./db";
+import { googleAuth, getDataFromSheet, processSheetData } from "./google_sheets";
 
 (async () => {
     
@@ -16,31 +17,24 @@ import { ISearchData } from "./types";
     });
     
     try{
-        auth = await utils.googleAuth();
+        auth = await googleAuth();
     } catch(error) {
         console.log("Google Auth error");
         console.log(error);
         return;
     }
 
-    const sheets = google.sheets({version: 'v4', auth});
-    const sheetData = await sheets.spreadsheets.values.get({
-        spreadsheetId: '11S7CHAZ4XqLsMu44ymqaHcnYm0gnpZxGbuoBAZNZTfc',
-        range: 'Sheet1!A2:C6',
-    });
+    const sheetData = await getDataFromSheet({
+        auth, 
+        range: 'Sheet1!A2:C6', 
+        spreadsheetId: '11S7CHAZ4XqLsMu44ymqaHcnYm0gnpZxGbuoBAZNZTfc'
+    })
 
     console.log(sheetData.data.values);
     if(sheetData.data.values.length){
-        let searchData: ISearchData = 
-                sheetData.data.values.reduce((data: ISearchData, value) => {
-                    data[value[1]] = {
-                        id: value[0],
-                        query: value[2]
-                    }
-                    return data;
-                },{});
+        let searchData: ISearchData = processSheetData(sheetData.data.values);
 
-            searchData = await utils.grabSearchCounts(
+            searchData = await grabSearchCounts(
                 "https://www.google.com/search?q=", 
                 "#resultStats", 
                 searchData
@@ -49,7 +43,7 @@ import { ISearchData } from "./types";
             console.log("***");
             console.log(searchData);
             
-        await utils.saveResults(pool, searchData);
+        await saveResults(pool, searchData);
     }
 
     console.log(">>> END");

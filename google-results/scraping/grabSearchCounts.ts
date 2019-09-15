@@ -4,8 +4,7 @@ import { ISearchData } from "./../types";
 export async function grabSearchCounts(
     url: string,
     dataSelector: string, 
-    searchData: ISearchData,
-    processDataElem?: (HTMLElement) => string
+    searchData: ISearchData
 ): Promise<ISearchData> {
 
     const browser = await puppeteer.launch({

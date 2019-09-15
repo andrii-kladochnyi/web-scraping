@@ -1,0 +1,2 @@
+export {grabSearchCounts} from "./grabSearchCounts";
+ 
