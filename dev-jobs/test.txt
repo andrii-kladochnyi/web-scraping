@@ -1,0 +1,332 @@
+*** Cookies ***
+[
+  {
+    name: '_px2',
+    value: 'eyJ1IjoiZTIwMzQwYTAtMTExOS0xMWVhLThjOTUtMDU3MWZlODY1MmZhIiwidiI6ImUyMjlkYjcxLTExMTktMTFlYS05NmYwLTZmMmFjZGU3OTdlMCIsInQiOjE1NzQ4NjE4NDc2NjQsImgiOiI0ZjE2MDJlMWQzNWYxODE4ZDQ2YTAwYzA2NGJiZTA1NjllZmY1Nzg1ZTY5YWQ3YTVhNTA3MmM2Y2Q1ZTVhYjY0In0=',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1575034146,
+    size: 240,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_brand',
+    value: 'UAen_US',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946733,
+    size: 21,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '_gat',
+    value: '1',
+    domain: '.udemy.com',
+    path: '/',
+    expires: 1574861404,
+    size: 5,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '_gid',
+    value: 'GA1.2.92190152.1574861345',
+    domain: '.udemy.com',
+    path: '/',
+    expires: 1574947744,
+    size: 29,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_modern_browser',
+    value: '1',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946632,
+    size: 24,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'eventing_session_id',
+    value: '00aa841f5f464b139471ef741c27a372-1574863145127',
+    domain: '.udemy.com',
+    path: '/',
+    expires: 1574863145,
+    size: 65,
+    httpOnly: false,
+    secure: true,
+    session: false,
+    sameSite: 'Strict'
+  },
+  {
+    name: 'evi',
+    value: '"SlFNcx5ATzcTQR5xWkBPNxMFCXtfTlc6UFERd11UQTFMXwklDRYUbgsICXNbUUVuCwgJN0xYRGATBUpjVFRBfgUOVm1MEQJuCwgJc1xbQ24LCAk3TFhEYBMFSmNUV019BQ4HY1xWQXQTSVBjGEBPfwJfCTcPQE96A0EfPEJAR34FSwl7FUADbgtCG21MFBRuC0Yddl4fCDE="',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1577453345.946519,
+    size: 209,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '_ga',
+    value: 'GA1.2.350981535.1574861345',
+    domain: '.udemy.com',
+    path: '/',
+    expires: 1637933344,
+    size: 29,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'EUCookieMessageState',
+    value: 'initial',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1576675744,
+    size: 27,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_language',
+    value: 'en',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946604,
+    size: 19,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '__cfruid',
+    value: 'e2a1e5494db210df8d21e52ea0402bbc9229561b-1574861345',
+    domain: '.udemy.com',
+    path: '/',
+    expires: -1,
+    size: 59,
+    httpOnly: true,
+    secure: false,
+    session: true
+  },
+  {
+    name: '_pxhd',
+    value: 'b3646b081feae697883c8f837c7e9f761b3fb072cd787926523182eced1ef562:e229db71-1119-11ea-96f0-6f2acde797e0',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: -1,
+    size: 106,
+    httpOnly: false,
+    secure: false,
+    session: true
+  },
+  {
+    name: 'ud_cache_marketplace_country',
+    value: 'UA',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946745,
+    size: 30,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '_px3',
+    value: '714a7ed1eea93e8c1f315163ab97e928b23e32290588ccaab973fce2e270620e:loKRo0tN5rtx8lNckTVVZ9AI1zfcyjM7c1UaeJyJNwfCb07D0msW3SQk5zBkYF07bTb0PCRjJr8rApN4tkfu+w==:1000:kyCUlrhB7CPvUPKlaxNaahlcsdxbdcy88lqf+O6cPcCDUibD53peRi3XLwD5Mj4cDKyTgV7yXLHxixrdkxBF8u6G1rDexA633csgSj8qr1rf94yygGRfGDGZ5iMaMQUFkeC7JcI6kmC51YQCS8AiYv7lTMbQggFFDIU/HOYb6KM=',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1575034146,
+    size: 335,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '_pxvid',
+    value: 'e229db71-1119-11ea-96f0-6f2acde797e0',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1621517345,
+    size: 42,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_firstvisit',
+    value: '2019-11-27T13:29:05.576869+00:00:1iZxNR:XWKnmDrW7etTvTWe6IkietFIoUQ',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1606397344.234541,
+    size: 80,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_device',
+    value: 'desktop',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946648,
+    size: 22,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_logged_in',
+    value: '0',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946618,
+    size: 19,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_campaign_code',
+    value: '2019BLACKFRIDAY',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946715,
+    size: 37,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_version',
+    value: '1',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946543,
+    size: 17,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'EUCookieMessageShown',
+    value: 'true',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1890221344,
+    size: 24,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'seen',
+    value: '1',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574863145.94676,
+    size: 5,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_release',
+    value: '82aa831dd77ecf21bb92f4558a2c9fc9581bea2b',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946682,
+    size: 56,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_user',
+    value: '""',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946697,
+    size: 15,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '__udmy_2_v57r',
+    value: '2ac2e4316ad0467aa8e9bc6bdf2c8621',
+    domain: '.udemy.com',
+    path: '/',
+    expires: 1606397345.946663,
+    size: 45,
+    httpOnly: false,
+    secure: true,
+    session: false
+  },
+  {
+    name: 'ud_rule_vars',
+    value: 'eJyFzcEKgzAQBNBfkb22ls2qicm3BGRN1hJakMbYi_jvDT302tMcZh5zQOF8lyJxeqctlTU74kDSd0pzxF4b5lHsHPQcFwqjJuXCuj6SgGvg8PDkrUxZXrvUjFzE18IDobKtUi2ZRnWOrMPhpg3avrsgOkQP17paUq7qe_zHDoZw-NkTzg_CLjTd:1iZxNT:VIpmJOyYs-m9Bt7eqvqkc3lSa60',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1637933345.946578,
+    size: 231,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: 'ud_cache_price_country',
+    value: 'UA',
+    domain: 'www.udemy.com',
+    path: '/',
+    expires: 1574947745.946564,
+    size: 24,
+    httpOnly: false,
+    secure: false,
+    session: false
+  },
+  {
+    name: '__cfduid',
+    value: 'd0ec21009ec17b68332e590577f76a2cf1574861345',
+    domain: '.udemy.com',
+    path: '/',
+    expires: 1577453344.234258,
+    size: 51,
+    httpOnly: true,
+    secure: false,
+    session: false
+  }
+]
+>>> Page  1
+[
+  'FL Studio 20 - Music Production In FL Studio for Mac & PC',
+  'Ultimate Ableton Live 10 COMPLETE: Parts 1, 2, and 3',
+  'Ultimate Ableton Live 9 COMPLETE: Parts 1, 2, & 3',
+  'Learn How to Make Electronic Music with Cubase',
+  'Music Production with Presonus Studio One ✅',
+  'Avid Pro Tools 12 Fundamentals',
+  'Garageband for Songwriting and Music Production',
+  'FL Studio 20 Workflow - Learn How To Work Fast in FL Studio',
+  'Logic Pro X Manual 101 - Complete Logic Pro X Masterclass',
+  'Rekordbox Dj - Mix like a Professional!',
+  'Ultimate Ableton Live 9 Complete: Parts 4, 5, & 6',
+  'Music Production II - Music Production Workflow - COMPLETE!!',
+  'The Ultimate Guide to Logic Pro X Instrument Plugins & VSTs',
+  "Adobe Audition CC: The Beginner's Guide to Adobe Audition",
+  'Composing Tools with Presonus Studio One ✅',
+  'Master Pro Tools 11 - A Definitive Pro Tools Course'
+]
+>>> nextPageUrl:  https://www.udemy.com/courses/music/music-software/?p=2
