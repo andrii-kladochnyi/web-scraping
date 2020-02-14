@@ -1,13 +1,13 @@
 const grabStats = require('./utils/grabStats');
 const Logger = require('./Logger');
 const logger = new Logger('logs', 'stack-', 'json');
-let startUrl = 'https://stackoverflow.com/jobs?sort=p';
+let startUrl = 'https://linuxacademy.com/library/';
 
 (async () => {
   const stats = await grabStats(
     startUrl,
-    '.listResults .post-tag',
-    '.s-pagination--item:last-child:not(.is-selected)',
+    '#AdvSearchResults .search-result-container h3',
+    '#AdvSearchPagination .ais-Pagination-item--nextPage a',
     false
   );
 

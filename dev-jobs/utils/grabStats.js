@@ -1,4 +1,4 @@
-const puppeteer = require("puppeteer");
+const puppeteer = require('puppeteer');
 
 async function grabStats(
   url,
@@ -7,12 +7,12 @@ async function grabStats(
   withTimeout = false
 ) {
   const browser = await puppeteer.launch({
-    devtools: true
+    //devtools: true
   });
   const page = await browser.newPage();
 
   await page.setUserAgent(
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
   );
   /*
   await page.setUserAgent(
@@ -20,13 +20,13 @@ async function grabStats(
   );*/
 
   await page.goto(url, {
-    waitUntil: "networkidle0"
+    waitUntil: 'networkidle0'
   });
 
-  await page.waitForSelector(".pagination-container");
+  /*   await page.waitForSelector('.pagination-container');
 
-  console.log("*** Cookies ***");
-  console.log(await page.cookies());
+  console.log('*** Cookies ***');
+  console.log(await page.cookies()); */
 
   const jobList = await processPage(
     page,
@@ -63,7 +63,7 @@ async function processPage(
   withTimeout,
   pageN
 ) {
-  console.log(">>> Page ", pageN++);
+  console.log('>>> Page ', pageN++);
 
   let newJobs = await page.$$eval(titleSelector, jobTitles =>
     jobTitles.map(el => el.innerText)
@@ -81,16 +81,16 @@ async function processPage(
   }, nextBtnSelector);
 
   if (nextPageUrl) {
-    console.log(">>> nextPageUrl: ", nextPageUrl);
+    console.log('>>> nextPageUrl: ', nextPageUrl);
     if (withTimeout) {
       await timeout();
     }
     await page.goto(nextPageUrl);
 
-    await page.waitForSelector(".pagination-container");
+    /*     await page.waitForSelector('.pagination-container');
 
-    console.log("*** Cookies ***");
-    console.log(await page.cookies());
+    console.log('*** Cookies ***');
+    console.log(await page.cookies()); */
 
     newJobs = [
       ...newJobs,
@@ -103,7 +103,7 @@ async function processPage(
       ))
     ];
   } else {
-    console.log(">>> LAST PAGE!");
+    console.log('>>> LAST PAGE!');
   }
 
   return newJobs;
